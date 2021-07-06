@@ -38,6 +38,10 @@ def set_the_alarm():
     else:
         set_alarm = f"{hour}:{minutes}:{seconds}"
         alarm(set_alarm)
+        hour_input.delete(0, END)
+        min_input.delete(0, END)
+        sec_input.delete(0, END)
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 
